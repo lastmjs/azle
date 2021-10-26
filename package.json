@@ -1,25 +1,31 @@
 {
-  "name": "azle",
-  "version": "0.0.0",
-  "description": "JavaScript/TypeScript CDK for the Internet Computer",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "bin": {
-    "azle": "./bin.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lastmjs/azle.git"
-  },
-  "keywords": [],
-  "author": "AZLE token holders (nlhft-2iaaa-aaaae-qaaua-cai)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/lastmjs/azle/issues"
-  },
-  "homepage": "https://github.com/lastmjs/azle#readme",
-  "dependencies": {
-    "ts-node": "10.3.1"
-  }
+    "name": "azle",
+    "version": "0.0.0",
+    "description": "JavaScript/TypeScript CDK for the Internet Computer",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prettier:check": "npx -p prettier -p pretty-quick pretty-quick --check",
+        "prettier:format": "npx -p prettier -p pretty-quick pretty-quick",
+        "prepare": "husky install"
+    },
+    "bin": {
+        "azle": "./bin.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lastmjs/azle.git"
+    },
+    "keywords": [],
+    "author": "AZLE token holders (nlhft-2iaaa-aaaae-qaaua-cai)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/lastmjs/azle/issues"
+    },
+    "homepage": "https://github.com/lastmjs/azle#readme",
+    "dependencies": {
+        "ts-node": "10.3.1"
+    },
+    "devDependencies": {
+        "husky": "^6.0.0"
+    }
 }

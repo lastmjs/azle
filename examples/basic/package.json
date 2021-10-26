@@ -9,6 +9,12 @@
         "dfx-optimize-azle": "./target/bin/ic-cdk-optimizer ./target/wasm32-unknown-unknown/release/azle.wasm -o ./target/wasm32-unknown-unknown/release/azle-optimized.wasm",
         "dfx-deploy-dapp": "npm run dfx-build-dapp && npm run dfx-optimize-dapp && dfx deploy dapp",
         "dfx-build-dapp": "./generate.sh && cargo build --target wasm32-unknown-unknown --package azle --release",
-        "dfx-optimize-dapp": "./target/bin/ic-cdk-optimizer ./target/wasm32-unknown-unknown/release/azle.wasm -o ./target/wasm32-unknown-unknown/release/azle-optimized.wasm"
+        "dfx-optimize-dapp": "./target/bin/ic-cdk-optimizer ./target/wasm32-unknown-unknown/release/azle.wasm -o ./target/wasm32-unknown-unknown/release/azle-optimized.wasm",
+        "prepare": "husky install"
+    },
+    "devDependencies": {
+        "husky": "^6.0.0",
+        "prettier": "^2.4.1",
+        "pretty-quick": "^3.1.1"
     }
 }
