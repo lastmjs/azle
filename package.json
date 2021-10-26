@@ -26,6 +26,7 @@
         "ts-node": "10.3.1"
     },
     "devDependencies": {
-        "husky": "^6.0.0"
+        "husky": "^6.0.0",
+        "npx": "^10.2.2"
     }
 }
